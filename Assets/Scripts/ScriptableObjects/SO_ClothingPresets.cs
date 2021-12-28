@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "Clothing", menuName = "Create Clothing Preset", order = 1)]
-public class ClothingPresets : ScriptableObject
+public class SO_ClothingPresets : ScriptableObject
 {
      public int headID = 0;
      public int shirtID = 0;

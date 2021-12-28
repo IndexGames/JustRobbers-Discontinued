@@ -5,8 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
 
-     public GameConfiguration gameConfiguration;
-
+     public SO_GameConfiguration gameConfiguration; // Where new item list will come from
     
     // Start is called before the first frame update
     void Start()

@@ -9,7 +9,7 @@ using Photon.Realtime;
 
 public class PhotonNetworkHandler : MonoBehaviourPunCallbacks
 {
-     public GameConfiguration gameConfig;
+     public SO_GameConfiguration gameConfig;
 
      private void Start()
      {

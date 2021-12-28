@@ -195,19 +195,19 @@ public class Enemy : MonoBehaviour
                enemyAnimator.SetInteger("movementState", 0);
           }
 
-          if (enemyWeapon.currentWeapon.weaponCategory == WeaponData.WeaponCategory.Unarmed)
+          if (enemyWeapon.currentWeapon.weaponCategory == SO_WeaponData.WeaponCategory.Unarmed)
           {
                SetAnimationLayer(0, 1f);
           }
-          else if (enemyWeapon.currentWeapon.weaponCategory == WeaponData.WeaponCategory.Knife)
+          else if (enemyWeapon.currentWeapon.weaponCategory == SO_WeaponData.WeaponCategory.Knife)
           {
                SetAnimationLayer(0, 1f);
           }
-          else if (enemyWeapon.currentWeapon.weaponCategory == WeaponData.WeaponCategory.Pistol)
+          else if (enemyWeapon.currentWeapon.weaponCategory == SO_WeaponData.WeaponCategory.Pistol)
           {
                SetAnimationLayer(2, 1f);
           }
-          else if (enemyWeapon.currentWeapon.weaponCategory == WeaponData.WeaponCategory.Rifle)
+          else if (enemyWeapon.currentWeapon.weaponCategory == SO_WeaponData.WeaponCategory.Rifle)
           {
                SetAnimationLayer(1, 1f);
           }

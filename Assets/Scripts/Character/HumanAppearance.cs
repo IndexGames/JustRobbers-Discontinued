@@ -18,7 +18,7 @@ public class HumanAppearance : MonoBehaviour
      public List<GameObject> head = new List<GameObject>();
      public List<Color> headColor = new List<Color>();
 
-     public ClothingPresets customPreset;
+     public SO_ClothingPresets customPreset;
      // Start is called before the first frame update
      void Start()
     {
@@ -54,7 +54,7 @@ public class HumanAppearance : MonoBehaviour
      }
 
      
-     public void LoadClothesPreset(ClothingPresets preset)
+     public void LoadClothesPreset(SO_ClothingPresets preset)
      {
           if(shirts[preset.shirtID] != null)
           {

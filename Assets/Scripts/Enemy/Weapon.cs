@@ -6,11 +6,11 @@ public class Weapon : MonoBehaviour
 {
 
 
-     public GameConfiguration gameconfig;
+     public SO_GameConfiguration gameconfig;
      
      public Transform leftHand;
 
-     public WeaponData currentWeapon;
+     public SO_WeaponData currentWeapon;
     
 
      private float fireRateCache = 0f;
@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour
     }
 
     
-     public void EquipWeapon(WeaponData newWeapon)
+     public void EquipWeapon(SO_WeaponData newWeapon)
      {
           Instantiate(newWeapon.weapon, leftHand);
           currentWeapon = newWeapon;
@@ -43,22 +43,22 @@ public class Weapon : MonoBehaviour
           Statistics targetStats = target.GetComponent<Statistics>();
 
        
-          if (currentWeapon.weaponCategory == WeaponData.WeaponCategory.Unarmed)
+          if (currentWeapon.weaponCategory == SO_WeaponData.WeaponCategory.Unarmed)
           {   
                fireRateCache = 0f;
                return true;
-          } else if (currentWeapon.weaponCategory == WeaponData.WeaponCategory.Knife)
+          } else if (currentWeapon.weaponCategory == SO_WeaponData.WeaponCategory.Knife)
           {
                fireRateCache = 0f;
                return true;
-          } else if (currentWeapon.weaponCategory == WeaponData.WeaponCategory.Pistol)
+          } else if (currentWeapon.weaponCategory == SO_WeaponData.WeaponCategory.Pistol)
           {
                Debug.Log("Attacking base");
 
                targetStats.DealDamage(currentWeapon.weaponDamage);
                fireRateCache = 0f;
                return true;
-          } else if (currentWeapon.weaponCategory == WeaponData.WeaponCategory.Rifle)
+          } else if (currentWeapon.weaponCategory == SO_WeaponData.WeaponCategory.Rifle)
           {
                Debug.Log("Attacking base");
                
